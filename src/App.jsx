@@ -1,4 +1,4 @@
-import { HashRouter, Routes, Route } from "react-router-dom"
+import { BrowserRouter, Routes, Route } from "react-router-dom"
 import Layout from "./components/layout/Layout"
 import Home from "./pages/home/Home"
 import Workouts from "./pages/workouts/Workouts"
@@ -12,14 +12,14 @@ import NotFound from "./pages/notFound/NotFound"
 function App() {
 
   return (
-    <HashRouter>
+    <BrowserRouter>
       <Routes>
         <Route path="/" element={<Layout />} >
           <Route index element={<Home />} />
-          <Route path="exercises" >
+          <Route path="/exercises" >
             <Route index element={<Workouts />} />
-            <Route path=":category" element={<Category />} />
-            <Route path="exercise/:id" element={<Workout />} />
+            <Route path="/:category" element={<Category />} />
+            <Route path="/exercise/:id" element={<Workout />} />
           </Route>
           <Route path="calculators" element={<Calculators />} />
           <Route path="about" element={<About />} />
@@ -27,7 +27,7 @@ function App() {
         </Route>
         <Route path="*" element={<NotFound />} />
       </Routes>
-    </HashRouter>
+    </BrowserRouter>
   )
 }
 
