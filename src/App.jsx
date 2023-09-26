@@ -16,10 +16,10 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout />} >
           <Route index element={<Home />} />
-          <Route path="/exercises" >
+          <Route path="exercises" >
             <Route index element={<Workouts />} />
-            <Route path="/:category" element={<Category />} />
-            <Route path="/exercise/:id" element={<Workout />} />
+            <Route path=":category" element={<Category />} />
+            <Route path="exercise/:id" element={<Workout />} />
           </Route>
           <Route path="calculators" element={<Calculators />} />
           <Route path="about" element={<About />} />
