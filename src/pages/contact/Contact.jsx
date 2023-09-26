@@ -1,7 +1,7 @@
 import { useState, useRef } from "react"
 import { db } from "../../firebase-config"
 import { collection, addDoc, serverTimestamp } from "firebase/firestore"
-import PageHead from "../../compenents/pageHead/PageHead"
+import PageHead from "../../components/pageHead/PageHead"
 import { validateForm } from "../../utils/validateForm"
 import { FaPaperPlane } from 'react-icons/fa'
 import "./contact.css"

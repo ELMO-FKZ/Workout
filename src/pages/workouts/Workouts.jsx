@@ -1,6 +1,6 @@
-import PageHead from "../../compenents/pageHead/PageHead"
-import FrontBodySvg from "../../compenents/bodySvg/FrontBodySvg" 
-import BackBodySvg from "../../compenents/bodySvg/BackBodySvg" 
+import PageHead from "../../components/pageHead/PageHead"
+import FrontBodySvg from "../../components/bodySvg/FrontBodySvg" 
+import BackBodySvg from "../../components/bodySvg/BackBodySvg" 
 import "./workouts.css"
 
 const Workouts = () => {

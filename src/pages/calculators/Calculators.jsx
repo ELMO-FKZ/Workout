@@ -1,6 +1,6 @@
-import PageHead from "../../compenents/pageHead/PageHead"
+import PageHead from "../../components/pageHead/PageHead"
 import calculators from "../../data/calculators"
-import CalculatorItem from "../../compenents/calculatorItem/CalculatorItem"
+import CalculatorItem from "../../components/calculatorItem/CalculatorItem"
 import "./calculators.css"
 
 const Calculators = () => {

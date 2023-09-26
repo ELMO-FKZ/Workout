@@ -1,7 +1,7 @@
-import BMICalculator from "../compenents/calculators/BMICalculator"
-import BodyFatCalculator from "../compenents/calculators/BodyFatCalculator"
-import IdealWeightCalculator from "../compenents/calculators/IdealWeightCalculator"
-import CalorieCalculator from "../compenents/calculators/CalorieCalculator"
+import BMICalculator from "../components/calculators/BMICalculator"
+import BodyFatCalculator from "../components/calculators/BodyFatCalculator"
+import IdealWeightCalculator from "../components/calculators/IdealWeightCalculator"
+import CalorieCalculator from "../components/calculators/CalorieCalculator"
 
 const calculators = [
     {id: 1, calculator: "BMI Calculator", component: <BMICalculator /> },

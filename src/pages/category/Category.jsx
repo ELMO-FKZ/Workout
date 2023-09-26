@@ -1,6 +1,6 @@
 import { useState } from "react"
 import { Link as LinkRouter, useParams } from "react-router-dom"
-import PageHead from "../../compenents/pageHead/PageHead"
+import PageHead from "../../components/pageHead/PageHead"
 import workouts from "../../data/workouts.json"
 import { FaChevronRight, FaChevronLeft ,FaSlidersH } from "react-icons/fa"
 import "./category.css"

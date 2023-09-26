@@ -1,4 +1,4 @@
-import PageHead from "../../compenents/pageHead/PageHead"
+import PageHead from "../../components/pageHead/PageHead"
 import { useParams } from "react-router-dom"
 import { BiBody, BiTargetLock, BiDumbbell, BiBookOpen } from "react-icons/bi"
 import workouts from "../../data/workouts.json"

@@ -1,6 +1,6 @@
-import Landing from "../../compenents/landing/Landing"
-import Advice from "../../compenents/advice/Advice"
-import Faqs from "../../compenents/faqs/Faqs"
+import Landing from "../../components/landing/Landing"
+import Advice from "../../components/advice/Advice"
+import Faqs from "../../components/faqs/Faqs"
 
 const Home = () => {
 
