@@ -15,17 +15,17 @@ const BodyFatCalculator = memo(function BodyFatCalculator() {
   const calculateBodyFatPercentage = (e) => {
     e.preventDefault()
     if (Object.keys(values).length !== 0) {
-      let { gender, height, weight, neck, hip, waist } = values
+      let { gender, height, weight } = values
       let bodyFatPercentage
       let leanMass
       let fatMass
       if (gender === "male") {
-        bodyFatPercentage = (495 / (1.0324 - 0.19077 * Math.log10((waist - neck) / height) + 0.15456 * Math.log10(height))) - 450
+        leanMass = 0.32810 * weight + 0.33929 * height - 29.5336
       } else if (gender === "female") {
-        bodyFatPercentage = (495 / (1.29579 - 0.35004 * Math.log10((waist + hip - neck) / height) + 0.22100 * Math.log10(height))) - 450
+        leanMass = 0.29569 * weight + 0.41813 * height - 43.2933
       }
-      leanMass = weight * (1 - bodyFatPercentage / 100)
       fatMass = weight - leanMass
+      bodyFatPercentage = (fatMass / weight) * 100
       setValues({...values, bodyFatPercentage: bodyFatPercentage.toFixed(2), leanMass: leanMass.toFixed(2), fatMass: fatMass.toFixed(2), showResults: true})
     }
   }
