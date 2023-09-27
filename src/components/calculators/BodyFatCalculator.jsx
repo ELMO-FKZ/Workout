@@ -20,9 +20,9 @@ const BodyFatCalculator = memo(function BodyFatCalculator() {
       let leanMass
       let fatMass
       if (gender === "male") {
-        bodyFatPercentage = 86.010 * Math.log10(waist - neck) - 70.041 * Math.log10(height) + 36.76
+        bodyFatPercentage = (495/(1.0324 - 0.19077 * Math.log10(waist - neck) + 0.15456 * Math.log10(height))) - 450
       } else if (gender === "female") {
-        bodyFatPercentage = 163.205 * Math.log10(waist + hip - neck) - 97.684 * Math.log10(height) - 78.387
+        bodyFatPercentage = (495/(1.29579 - 0.35004 * Math.log10(waist + hip - neck) + 0.22100 * Math.log10(height))) - 450
       }
       leanMass = weight * (1 - bodyFatPercentage / 100)
       fatMass = weight - leanMass
